@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex; /*coloca um do lado do outro*/
+    justify-content: center;
+    align-items: center; /*colocar os itens no centro*/
+    
+}
+.left-login {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: rgb(40, 255, 183);
+}
+
+.left-login-image {
+    width: 25vw;
+}
+.rigth-login {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*embaixo do outro*/
+    padding: 20px 120px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    margin-left: 190px;
+}
+
+.card-login > h1 {
+    color: rgb(29, 255, 180);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 220%;
+    margin-left: -60px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color:rgb(238, 254, 255);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none; /*pra tirar aquela margem do input quando clica*/
+    box-sizing: border-box;
+
+}
+
+label {
+    cursor: default;
+    margin-left: -55px;
+}
+
+.textfield > label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: rgb(172, 172, 172);
+}
+
+.btn-login {
+    width: 219%;
+    position: relative;
+    left: 5px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    
+}
+.btn-login:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: white;
+}
+
+
+/*Responsive*/
+@media only screen and (max-width:768px){ /*tablet*/
+    .card-login {
+        width: 40%;
+        display: flex;
+        
+        padding: 20px 100px;
+        background: #2f2841;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px #00000056;
+        margin-left: 110px;
+    }
+}
+
+@media only screen and (max-width:425px){ /*celular*/
+
+     .card-login {
+        width: 15vh;
+        position: relative;
+        left: 10px;
+        padding: 10px 40px;
+        margin: 6px;
+   }
+   .textfield > input {
+    width: 260%;
+   }
+}
+
+
+@media only screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-login {
+        flex-direction: column;
+        height: 610px;
+    }
+    .card-login {
+        width: 40vh;
+        position: relative;
+        left: 10px;
+        padding: 20px 90px;
+        margin: 6px;
+    }
+    
+}
