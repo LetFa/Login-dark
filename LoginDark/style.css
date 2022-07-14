@@ -133,7 +133,11 @@ label {
         box-shadow: 0px 10px 40px #00000056;
         margin-left: 110px;
     }
+    .left-login-image {
+        width: 35vw;
+       }
 }
+
 
 @media only screen and (max-width:425px){ /*celular*/
 
@@ -145,11 +149,51 @@ label {
         margin: 6px;
    }
    .textfield > input {
-    width: 220%;
+    width: 320%;
    }
+   .left-login-image {
+    width: 45vw;
+   }
+   
+    .left-login > h1 {
+        font-size: 4vw;
+        color: rgb(40, 255, 183);
+    }
+
+   .btn-login {
+        width: 219%;
+        position: relative;
+        left: 1px;
+        padding: 10px 0px;
+        margin: 25px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 3px;
+        color: #2b134b;
+        background: #00ff88;
+        cursor: pointer;
+        box-shadow: 0px 10px 40px -12px #00ff8052;
+    }
+
 }
 
+@media only screen and (max-width:375px) {
+    .card-login{
+        width: 10vh;
+        position: relative;
+        left: 10px;
+        top: 5px;
+        padding: 20px 90px;
+        margin: 6px;
+    }
+    .textfield > input {
+        width: 350%;
+       }
 
+}
 @media only screen and (max-width:950px){
     .card-login{
         width: 85%;
@@ -158,12 +202,13 @@ label {
 @media only screen and (max-width:600px){
     .main-login {
         flex-direction: column;
-        height: 610px;
+        height: 710px;
     }
     .card-login {
-        width: 40vh;
+        width: 10vh;
         position: relative;
         left: 10px;
+        top: -29px;
         padding: 20px 90px;
         margin: 6px;
     }
